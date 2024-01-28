@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 15px;
+        }
+        </style>
     <title>Basic Website</title>
 <link rel="shortcut icon" href="images/favicon.ico">
 </head>
@@ -8,7 +17,7 @@
         <h1>Website Blueprint</h1>
         <p>This is a <em><strong>paragraph</strong></em></p>
         <P>Favicon is present (Look next to website name)</P>
-        <table>
+        <table style="width:100%">
             <tr>
                 <th>Where I lived</th>
                 <th>For how long?</th>
@@ -26,6 +35,9 @@
                 <td>7 Months</td>
             </tr>
         </table>
+        <button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
 
     </body>
 </html>
