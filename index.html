@@ -1,19 +1,22 @@
-<!DOCTYPE html>
+<!DOCTYPE html, css>
 <html>
 <head>
-    <style>
-        table, th, td {
-          border: 1px solid rgb(0, 0, 0);
-          border-collapse: collapse;
-        }
-        th, td {
-          padding: 15px;
-        }
-        </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Basic Website</title>
 <link rel="shortcut icon" href="images/favicon.ico">
 </head>
     <body>
+        <table style="width:100%">
+        <tr>
+            <th><div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                  <a href="text.html">Info</a>
+                  <a href="page.html">Gallery</a>
+                </div>
+              </div></th>
+        </tr>
+        </table>
         <h1>Website Blueprint</h1>
         <p>This is a <em><strong>paragraph</strong></em></p>
         <P>Favicon is present (Look next to website name)</P>
@@ -35,10 +38,12 @@
                 <td>7 Months</td>
             </tr>
         </table>
+        <p></P>
         <button type="button"
 onclick="document.getElementById('demo').innerHTML = Date()">
 Click me to display Date and Time.</button>
 <p id="demo"></p>
+<img src="https://cognota.com/wp-content/uploads/2019/09/blueprint.jpg" alt="blueprint">
 
     </body>
 </html>
